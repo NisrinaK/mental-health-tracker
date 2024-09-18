@@ -18,7 +18,7 @@ from django.urls import reverse
 @login_required(login_url='/login')
 def show_main(request):
     mood_entries = MoodEntry.objects.filter(user=request.user)
-
+#view
     context = {
         'name': 'Nisrina Kamilya Nisyya',
         'class': 'PBP A',
